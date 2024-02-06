@@ -7,4 +7,6 @@ class AppIcons {
   static const String caves = 'assets/icons/caves.svg';
   static const String shepherd = 'assets/icons/shepherd.svg';
   static const String tropical = 'assets/icons/tropical.svg';
+  static const String cancel = 'assets/icons/cancel.svg';
+  
 }
