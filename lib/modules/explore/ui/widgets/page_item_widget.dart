@@ -43,7 +43,7 @@ class _ItemWidgetState extends State<ItemWidget> {
                         child: ClipRRect(
                             borderRadius: BorderRadius.circular(10),
                             child: Image.network(
-                              'https://picsum.photos/$index/200',
+                              'https://source.unsplash.com/featured/?nature',
                               fit: BoxFit.cover,
                               errorBuilder: (context, error, stackTrace) {
                                 return Image.asset(AppImages.island);
