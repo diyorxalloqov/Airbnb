@@ -49,7 +49,7 @@ class _IslandsState extends State<Islands> {
             children: [
               ListView.builder(
                   controller: _scrollController,
-                  itemCount: 20 + 2,
+                  itemCount: 25 + 2,
                   itemBuilder: (context, index) {
                     if (index == 0) {
                       return Card(
