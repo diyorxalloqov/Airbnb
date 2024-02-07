@@ -1,4 +1,5 @@
 import 'package:airbnb/core/constants/app_icons.dart';
+import 'package:airbnb/modules/explore/ui/details/google_map.dart';
 import 'package:airbnb/modules/explore/ui/pages/amazing_pools.dart';
 import 'package:airbnb/modules/explore/ui/pages/arctic.dart';
 import 'package:airbnb/modules/explore/ui/pages/casas_particulares.dart';
@@ -130,7 +131,12 @@ class _ExplorePageState extends State<ExplorePage>
               children: [
                 FloatingActionButton.extended(
                     backgroundColor: Colors.black,
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const GoogleMapPage()));
+                    },
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(100)),
                     label: const Row(
@@ -150,7 +156,7 @@ class _ExplorePageState extends State<ExplorePage>
                     )),
                 _tabController.index == 0
                     ? SpaceHeight(height: context.height * 0.06)
-                    : SizedBox.shrink()
+                    : const SizedBox.shrink()
               ],
             ),
     );

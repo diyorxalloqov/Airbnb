@@ -1,3 +1,4 @@
+import 'package:airbnb/modules/explore/ui/details/details_page.dart';
 import 'package:airbnb/modules/explore/ui/widgets/page_item_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -9,6 +10,11 @@ class CasasParcticulares extends StatelessWidget {
     return ListView.builder(
         padding: const EdgeInsets.only(top: 10),
         itemBuilder: (context, index) =>
-            ItemWidget(onTap: () {}, isTaxes: false));
+            ItemWidget(onTap: () {
+              Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const DetailsPage()));
+            }, isTaxes: false));
   }
 }

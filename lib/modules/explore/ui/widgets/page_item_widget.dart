@@ -42,9 +42,12 @@ class _ItemWidgetState extends State<ItemWidget> {
                         padding: const EdgeInsets.only(right: 10),
                         child: ClipRRect(
                             borderRadius: BorderRadius.circular(10),
-                            child: Image.asset(
-                              AppImages.island,
+                            child: Image.network(
+                              'https://picsum.photos/$index/200',
                               fit: BoxFit.cover,
+                              errorBuilder: (context, error, stackTrace) {
+                                return Image.asset(AppImages.island);
+                              },
                             )),
                       );
                     }),
