@@ -24,9 +24,7 @@ class _ItemWidgetState extends State<ItemWidget> {
           Container(
             height: context.height * 0.35,
             margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(10),
-            ),
+            decoration: BoxDecoration(borderRadius: BorderRadius.circular(10)),
             child: Stack(
               alignment: Alignment.topRight,
               children: [
